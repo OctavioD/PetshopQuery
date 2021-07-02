@@ -162,7 +162,7 @@ input:focus{
 .btn {
     border-radius: .8rem; 
     border: none; 
-    padding: 1rem 1.5rem; 
+    padding: 1rem 1.5rem;
 }
 
 .btn-form {
@@ -281,4 +281,44 @@ footer {
 
 .img-logo {
     width: 15rem;
+}
+
+@media (max-width: 1013px){
+
+    .barra-superior{
+        display: none;
+    }
+
+    .productos-destacados img{
+        height: 83.95px;
+        width: 90.38px;
+    }
+
+    .productos-destacados .brown{
+        display: inline-block;
+        width: 212.89px;
+        height: 93.95px;
+    }
+
+    .btn-form{
+        padding: 1.5rem 3rem;
+    }
+
+    /*footer*/
+
+    .suscripition{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 101px;
+        width: 414px;
+    }
+
+    .footer-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 }
