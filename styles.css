@@ -22,6 +22,15 @@ header nav {
     align-items: center;
 }
 
+#logo-superior {
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+nav ul li{
+    color: white;
+}
+
 .barra-superior ul {
     display: flex;
 }
@@ -33,7 +42,7 @@ header nav {
 /** PRINCIPAL */
 
 .principal {
-    background-image: url(../img/fondo.png);
+    background-image: url(./img/fondo.png);
     width: 100%;
     text-align: right;
     height: 30rem;
@@ -63,17 +72,6 @@ header nav {
     font-weight: normal;
 }
 
-nav a {
-    text-decoration: none;
-    margin-right: 1rem;
-    color: white;
-    font-size: 1.2rem;
-}
-
-nav img {
-    margin-right: 0.3rem;
-}
-
 .btn-comederos {
     background-color: #F0A83E; 
     color:white; 
@@ -95,6 +93,8 @@ nav img {
 }
 
 .productos-destacados h1 {
+    display: inline-block;
+    height: 60px;
     font-weight: 700;
     font-size: 40px;
 }
@@ -207,7 +207,7 @@ input:focus{
     margin-right: 1rem;
 }
 .suscription input {
-    width: 25rem;
+    width: 40vw;
     background: white;
     border: 0px;
 }
@@ -283,7 +283,48 @@ footer {
     width: 15rem;
 }
 
-@media (max-width: 1013px){
+@media (max-width: 850px){
+
+    header nav{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    #logo-superior{
+        width: 250px;
+    }
+
+    .principal{
+        text-align: left;
+        padding-left: 1vw;
+        width: auto;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 1vh;
+        padding-inline-start: 4vw;
+    }
+
+    nav ul li{
+        font-size: 18px;
+    }
+
+    .principal h2{
+        font-size: 20px;
+    }
+
+    .principal h3{
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 0.5vh;
+        padding-bottom: 0.5vh;
+        border-radius: 12px;
+    }
 
     .barra-superior{
         display: none;
@@ -294,14 +335,23 @@ footer {
         width: 90.38px;
     }
 
+    .productos-destacados h1{
+        height: 90px;
+    }
+
     .productos-destacados .brown{
         display: inline-block;
         width: 212.89px;
-        height: 93.95px;
+        height: 40px;
+    }
+
+    .productos{
+        flex-direction: column;
     }
 
     .btn-form{
         padding: 1.5rem 3rem;
+        width: auto;
     }
 
     /*footer*/
@@ -314,11 +364,19 @@ footer {
         width: 414px;
     }
 
+    .suscription .suscription-logo{
+        display: none;
+    }
+
     .footer-section{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .img-logo{
+        display: none;
     }
 
 }
